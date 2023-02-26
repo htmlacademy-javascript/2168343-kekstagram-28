@@ -2,7 +2,7 @@ const checkStringLength = (testString, maxLength) => testString.length <= maxLen
 
 
 const isPalindrome = (testString) => {
-  changedString = testString.toLowerCase().replaceAll(/\s/g, '');
+  const changedString = testString.toLowerCase().replaceAll(/\s/g, '');
 
   const lastSymbol = changedString.length - 1;
 
@@ -28,7 +28,7 @@ const findNumbers = (string) => {
 
 };
 
-const lookingMoreOrLess = (string, minLength, padString) => {
+const getPaddedString = (string, minLength, padString) => {
   const actualPad = minLength - string.length;
 
   if (actualPad <= 0) {
