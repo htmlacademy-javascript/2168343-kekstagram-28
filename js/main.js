@@ -1,3 +1,5 @@
 import {createUserPhotos} from './data.js';
+import {renderPhoto} from './renderPhoto.js';
 
-createUserPhotos ();
+const collectPhoto = createUserPhotos();
+renderPhoto(collectPhoto);
