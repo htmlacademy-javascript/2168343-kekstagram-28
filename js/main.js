@@ -1,7 +1,9 @@
 import {createUserPhotos} from './data.js';
 import {renderGallery} from './render-photo.js';
-import {renderPhoto} from './render-big-photo.js';
+import {renderPreviewPhoto} from './render-big-photo.js';
 
-renderGallery(createUserPhotos());
-renderPhoto(createUserPhotos());
+const picture = createUserPhotos();
+
+renderGallery(picture);
+renderPreviewPhoto(picture);
 
