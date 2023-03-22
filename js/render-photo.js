@@ -1,7 +1,10 @@
+import {createUserPhotos} from './data.js';
+
 const pictureList = document.querySelector('.pictures');
 const pictureTemplate = document.querySelector('#picture').content.querySelector('.picture');
+const createPictures = createUserPhotos();
 
-const renderPhoto = (createPictures) => {
+const renderGallery = () => {
   const pictureFragment = document.createDocumentFragment();
 
   createPictures.forEach(({url, description, likes, comments, id}) => {
@@ -17,4 +20,4 @@ const renderPhoto = (createPictures) => {
   pictureList.append(pictureFragment);
 };
 
-export {renderPhoto};
+export {renderGallery};

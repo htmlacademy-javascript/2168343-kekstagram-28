@@ -1,8 +1,5 @@
-import {createUserPhotos} from './data.js';
-import {renderPhoto} from './render-photo.js';
-import './photo-modal.js';
+import {renderPhoto} from './render-big-photo.js';
+import {renderGallery} from './render-photo.js';
 
-
-const collectPhoto = createUserPhotos();
-renderPhoto(collectPhoto);
+renderPhoto(renderGallery());
 
