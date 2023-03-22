@@ -1,6 +1,5 @@
 import { openBigUserPhoto } from './photo-modal.js';
 
-
 const container = document.querySelector('.pictures');
 
 const renderPhoto = (pictures) => {
@@ -10,9 +9,7 @@ const renderPhoto = (pictures) => {
       return;
     }
 
-    const picture = pictures.find(
-      (item) => item.id === +thumbnail.dataset.dataPictureId
-    );
+    const picture = pictures.find((element) => element.id === +thumbnail.dataset.pictureId);
 
     openBigUserPhoto(picture);
   });

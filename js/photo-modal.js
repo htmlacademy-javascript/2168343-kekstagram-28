@@ -33,7 +33,7 @@ function openBigUserPhoto (picture) {
   bigPictureElement.classList.remove('hidden');
   bigPictureElement.querySelector('.social__comment-count').classList.add('hidden');
   bigPictureElement.querySelector('.comments-loader').classList.add('hidden');
-  body.classlist.add('.modal-open');
+  body.classList.add('modal-open');
   renderPictureDetails(picture);
 
   document.addEventListener('keydown', () => {
@@ -45,7 +45,7 @@ function closeBigUserPhoto () {
   bigPictureElement.classList.add('hidden');
   bigPictureElement.querySelector('.social__comment-count').classList.remove('hidden');
   bigPictureElement.querySelector('.comments-loader').classList.remove('hidden');
-  body.classlist.remove('.modal-open');
+  body.classList.remove('modal-open');
   document.removeEventListener('keydown', () => {
     onBigPictureEscKeydown();
   });

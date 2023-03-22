@@ -1,5 +1,7 @@
-import {renderPhoto} from './render-big-photo.js';
+import {createUserPhotos} from './data.js';
 import {renderGallery} from './render-photo.js';
+import {renderPhoto} from './render-big-photo.js';
 
-renderPhoto(renderGallery());
+renderGallery(createUserPhotos());
+renderPhoto(createUserPhotos());
 
