@@ -51,7 +51,7 @@ const createUserPhotoDescription = () => ({
   url: `photos/${generateUrlNumber()}.jpg`,
   description: getRandomArrayElement(DESCRIPTIONS),
   likes: getRandomInteger(LIKE_MIN_COUNT, LIKE_MAX_COUNT),
-  comments: Array.from({length: getRandomInteger(1, 5)}, () => createMessageComment())
+  comments: Array.from({length: getRandomInteger(1, 15)}, () => createMessageComment())
 });
 
 const createUserPhotos = () => Array.from({length: PHOTOS_COUNT}, () => createUserPhotoDescription());
